@@ -92,6 +92,7 @@ li, a, button, #submit, p {
   z-index: -1;
   overflow: auto;
   text-align: justify;
+  cursor: default;
 }
 
 .introduction {
