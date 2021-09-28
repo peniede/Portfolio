@@ -13,14 +13,16 @@ body {
   top: 0;
   justify-content: space-between;
   padding: 30px 10%;
+  position: sticky;
+  z-index: 2;
 }
 
 #nav-bar li {
   display: inline-block;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
-li, a, button, #submit {
+li, a, button, #submit, p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -54,6 +56,7 @@ li, a, button, #submit {
   position: relative;
   top: 10px;
   right: 46px;
+  z-index: 1;
   visibility: hidden;
   transition: all 0.8s ease 0.8s;
 }
@@ -78,4 +81,33 @@ li, a, button, #submit {
   color: #edf0f1;
   opacity: 0.8;
   text-align: center;
+}
+
+.grid {
+  margin: auto;
+  margin-top: -260px;
+  width: 70vw;
+  height: 70vh;
+  border: none;
+  z-index: -1;
+  overflow: auto;
+  text-align: justify;
+}
+
+.introduction {
+  padding: 0 20px;
+  
+}
+.background {
+  width: 99%;
+  height: 100px;
+  top: 0px;
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  background-color: #24252a;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
 }
