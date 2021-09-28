@@ -15,17 +15,29 @@ body {
   padding: 30px 10%;
   position: sticky;
   z-index: 2;
+  pointer-events: none;
 }
 
 #nav-bar li {
   display: inline-block;
   padding: 0 30px;
+  pointer-events: auto;
 }
 
 li, a, button, #submit, p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  list-style: none;
+  pointer-events: auto;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
   color: #edf0f1;
   text-decoration: none;
   list-style: none;
@@ -65,7 +77,7 @@ li, a, button, #submit, p {
   padding: 10px;
 }
 
-#submit:hover, button:hover {
+#submit:hover, button:hover, .card-button:hover {
   background-color: rgba(0,136,169,0.8);
 }
 
@@ -85,7 +97,7 @@ li, a, button, #submit, p {
 
 .grid {
   margin: auto;
-  margin-top: -260px;
+  margin-top: -230px;
   width: 70vw;
   height: 70vh;
   border: none;
@@ -112,3 +124,37 @@ li, a, button, #submit, p {
 .grid::-webkit-scrollbar {
   display: none;
 }
+
+.card {
+  color: #24252a;
+  float: right;
+  margin: 30px 30px 15px 30px;
+  background-image: url(https://i.ibb.co/wz0BxTZ/23-F20212-EF6-F-41-A7-B5-A4-6-B103123-A852-4-5005-c.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  height: 450px;
+  max-width: 35ch;
+  position: relative;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+
+.card-body {
+  padding: 275px 1.5em 15px 1.5em;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 5px 5px rgba(0,136,169,1);
+  transform: scale(1.05);
+}
+
+.card-button {
+  padding: 9px 50px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
