@@ -133,12 +133,15 @@ h2 {
 }
 
 .card {
+  box-sizing: border-box;
   float: right;
   margin: 30px 30px 15px 30px;
   background-image: url(https://i.ibb.co/wz0BxTZ/23-F20212-EF6-F-41-A7-B5-A4-6-B103123-A852-4-5005-c.jpg);
-  background-size: contain;
+  background-size: cover;
   background-color: #292929;
   border-radius: 15px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.7);
+  filter: drop-shadow(0 0 3px rgba(7, 7, 7, 0.12));
   height: 450px;
   max-width: 35ch;
   position: relative;
@@ -147,7 +150,7 @@ h2 {
 }
 
 .card-body {
-  padding: 275px 1.5em 15px 1.5em;
+  padding: 265px 1.5em 15px 1.5em;
   text-align: center;
 }
 
