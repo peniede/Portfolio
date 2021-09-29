@@ -69,8 +69,15 @@ h2 {
   top: 10px;
   right: 46px;
   z-index: 1;
-  visibility: hidden;
-  transition: all 0.8s ease 0.8s;
+}
+
+#message-form {
+  opacity: 0;
+  transition: opacity 1500ms;
+}
+
+#message-form.akt {
+  opacity: 1;
 }
 
 #form li {
