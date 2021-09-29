@@ -145,7 +145,7 @@ h1 {
   box-sizing: border-box;
   float: right;
   margin: 75px 30px 15px 30px;
-  background-image: url(https://i.ibb.co/wz0BxTZ/23-F20212-EF6-F-41-A7-B5-A4-6-B103123-A852-4-5005-c.jpg);
+  background-image: url(/Portfolio-data/ich.jpeg);
   background-size: cover;
   background-color: #292929;
   border-radius: 15px;
@@ -155,7 +155,8 @@ h1 {
   max-width: 35ch;
   position: relative;
   cursor: pointer;
-  transition: 300ms ease;
+  transition: all 2s ease;
+  background-blend-mode: luminosity;
 }
 
 .card-body {
@@ -164,7 +165,9 @@ h1 {
 }
 
 .card:hover {
+  transition-duration: 2s;
   transform: scale(1.02);
+  background-blend-mode: normal;
 }
 
 .card-button {
@@ -174,6 +177,7 @@ h1 {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  filter: grayscale(0%);
 }
 
 .container {
