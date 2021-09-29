@@ -133,11 +133,11 @@ h2 {
 }
 
 .card {
-  color: #24252a;
   float: right;
   margin: 30px 30px 15px 30px;
   background-image: url(https://i.ibb.co/wz0BxTZ/23-F20212-EF6-F-41-A7-B5-A4-6-B103123-A852-4-5005-c.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-color: #292929;
   border-radius: 15px;
   height: 450px;
   max-width: 35ch;
@@ -152,7 +152,6 @@ h2 {
 }
 
 .card:hover {
-  box-shadow: 0px 0px 5px 5px rgba(0,136,169,1);
   transform: scale(1.05);
 }
 
@@ -164,4 +163,33 @@ h2 {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 10px 10px 10px 10px;
+  grid-template-areas:
+    "html css js phyton c-sharp sql git react";
+
+}
+
+#main {
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  background: #292929;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  justify-self: center;
+  transition: all 0.3s ease;
+}
+
+#main:hover {
+  transform: scale(1.05);
+}
+
+
 
