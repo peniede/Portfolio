@@ -145,7 +145,7 @@ h1 {
   box-sizing: border-box;
   float: right;
   margin: 75px 30px 15px 30px;
-  background-image: url(/Portfolio-data/ich.jpeg);
+  background-image: url(/Portfolio/Portfolio-data/ich.jpeg);
   background-size: cover;
   background-color: #292929;
   border-radius: 15px;
@@ -193,6 +193,9 @@ h1 {
 }
 
 #main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80px;
   width: 80px;
   border-radius: 5px;
@@ -201,11 +204,19 @@ h1 {
   border: 2px solid rgba(7, 7, 7, 0.12);
   justify-self: center;
   transition: all 0.3s ease;
+  filter: grayscale(100%)
 }
 
 #main:hover {
   transform: scale(1.05);
+  filter: grayscale(0%);
 }
+
+.div-js {
+  grid-area: js;
+}
+
+
 
 
 
